@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  background-image: url(./Three.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.39);
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: -1px -1px 30px rgb(0, 0, 0);
+}
+
+h1 {
+  text-align: center;
+  color: #ffffffc2;
+  font-size: 45px;
+  font-family: sans-serif;
+  font-weight: 900;
+}
+input {
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid rgb(170, 170, 170);
+  background-color: rgba(255, 255, 255, 0.288);
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 15px;
+  padding: 1px 5px;
+}
+.labe {
+  margin-left: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 600;
+}
+.textaria {
+  width: 100%;
+  height: 40px;
+  color: white;
+  font-size: 17px;
+  font-weight: 800;
+  border: 1px solid rgba(255, 255, 255, 0.671);
+  background-color: rgba(255, 255, 255, 0.288);
+  border-radius: 10px;
+}
+form label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 20px;
+  background-color: #ffffff4d;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.479);
+  color: rgb(255, 254, 254);
+  transition-duration: 0.6s;
+}
+button:active {
+  background-color: rgba(0, 0, 0, 0.486);
+  color: rgba(255, 0, 0, 0.651);
+  transition-duration: 0.6s;
+}
+
+.resume-output {
+  margin-top: 20px;
+  background-color: #ffffff96;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+#download-pdf {
+  display: none;
+  margin-top: 15px;
+  background-color: #007bff;
+}
+
+#download-pdf:hover {
+  background-color: #0057b36c;
+}
