@@ -22,21 +22,22 @@ document.getElementById('resume-form').addEventListener('submit', function(event
       <h3>Education</h3>
       <p>${education}</p>
     `;
-  
+
     document.getElementById('download-pdf').style.display = 'block';
   });
   
   document.getElementById('download-pdf').addEventListener('click', function() {
     const resumeContent = document.getElementById('resume-output').innerHTML;
-    const opt = {
+  const opt = {
       margin:       0.9,
       filename:     'resume.pdf',
       image:        { type: 'jpeg', quality: 0.98 },
       html2canvas:  { scale: 2 },
-      jsPDF:     { unit: 'in', format: 'letter', orientation: 'portrait' }
+      jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
     };
   
     html2pdf().from(resumeContent).set(opt).save();
   });
-  
+
+
   
