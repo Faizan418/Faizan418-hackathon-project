@@ -82,12 +82,12 @@ button {
 button:hover {
   background-color: rgba(0, 0, 0, 0.479);
   color: rgb(255, 254, 254);
-  transition-duration: 0.6s;
+  transition-duration: 0.4s;
 }
 button:active {
   background-color: rgba(0, 0, 0, 0.486);
   color: rgba(255, 0, 0, 0.651);
-  transition-duration: 0.6s;
+  transition-duration: 0.4s;
 }
 
 .resume-output {
@@ -105,5 +105,5 @@ button:active {
 }
 
 #download-pdf:hover {
-  background-color: #0057b36c;
+  background-color: #0057b356;
 }
