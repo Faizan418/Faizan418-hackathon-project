@@ -34,11 +34,7 @@ document
     const resumeContent = document.getElementById('resume-output').innerHTML;
     const opt = {
       margin:       0.5,
-<<<<<<< HEAD
-      filename:     'My-Resume.pdf',
-=======
       filename:     'resume.pdf',
->>>>>>> b4195c28fb9231e1fd69d8252b82848175795d26
       image:        { type: 'jpeg', quality: 0.98 },
       html2canvas:  { scale: 2 },
       jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
