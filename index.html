@@ -21,7 +21,7 @@
 
         <label class="labe" for="email">Email:</label>
         <input
-          type="text"
+          type="email"
           id="email"
           placeholder="Please Enter your Email ..."
           required
@@ -29,7 +29,7 @@
 
         <label class="labe" for="phone">Phone Number:</label>
         <input
-          type="text"
+          type="tel"
           id="phone"
           placeholder="Please Enter your Phone No# ..."
           required
@@ -75,9 +75,9 @@
 
       <div id="resume-output" class="resume-output"></div>
 
-      <button id="download-pdf">Download as PDF</button>
+      <!-- <button id="download-pdf" download="My-Resume.pdf">Download as PDF</button> -->
+      <a href="download-pdf" download="My-Resume.jpg" class="download-btn"><button id="download-pdf">Download CV</button></a>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
