@@ -25,21 +25,15 @@ document
       <p>${education}</p>
     `;
 
-   // Show the download button
-   document.getElementById('download-pdf').style.display = 'block';
+  document.getElementById("resume-output").innerHTML = resumeHTML;
   });
   
-  // Download as PDF functionality
-  document.getElementById('download-pdf').addEventListener('click', function() {
-    const resumeContent = document.getElementById('resume-output').innerHTML;
-    const opt = {
-      margin:       0.5,
-      filename:     'resume.pdf',
-      image:        { type: 'jpeg', quality: 0.98 },
-      html2canvas:  { scale: 2 },
-      jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
-    };
+  function downloadResume() {
+    const resumeContent = document.getElementById("resume-output").innerHTML;
   
-    // Convert HTML to PDF using jsPDF and html2pdf
-    html2pdf().from(resumeContent).set(opt).save();
-  });
+    const blob = new Blob([resumeContent], { type: "text/html" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "Resume.html";
+    link.click();
+  }

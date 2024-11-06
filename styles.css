@@ -108,7 +108,7 @@ button:active {
 }
 
 #download-pdf {
-  display: none;
+  /* display: none; */
   margin-top: 15px;
   background-color: #007bff;
 }
