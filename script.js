@@ -25,7 +25,7 @@ document
       <p>${education}</p>
     `;
 
-  document.getElementById("resume-output").innerHTML = resumeHTML;
+  
   });
   
   function downloadResume() {
@@ -37,3 +37,4 @@ document
     link.download = "Resume.html";
     link.click();
   }
+document.getElementById("resume-output").innerHTML = resumeHTML;
